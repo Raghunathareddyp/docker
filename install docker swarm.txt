@@ -1,0 +1,10 @@
+docker swarm init
+
+docker swarm join-token worker
+
+docker swarm join-token manager
+
+git clone https://github.com/Raghunathareddyp/docker.git
+
+
+docker stack deploy -c docker-compose2.yaml testit
