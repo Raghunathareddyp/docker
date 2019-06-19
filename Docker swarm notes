@@ -6,3 +6,24 @@ Features of Docker Swarm :
     Desired state reconcilation
     multihost networking
     service discovery using embedded DNS and load balancing
+    Secure communication between nodes using TLS
+    roling updates
+
+Docker swarm schedule the tasks, a task is a running container which
+is part of swarm service and managed by swarm manager
+
+Docker swarm works to maintain desired state, if any worker node becomes
+unavailable then docker schedules that node tasks to another node.
+
+stand alone conatainers and swarm - main difference is who manges conatainers
+in case of stand alone docker daemon , in case of swarm - swarm manager.
+
+To deploy your application to a swarm, you submit a service definition to a manager node. 
+The manager node dispatches units of work called tasks to worker nodes.
+
+service is the definition of the tasks to execute on the manager or worker nodes
+replicated services - as per the desired state
+global services - task on every node of swarm like
+
+A task carries a Docker container and the commands to run inside the container. 
+It is the atomic scheduling unit of swarm
