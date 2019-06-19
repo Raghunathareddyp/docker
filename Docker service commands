@@ -1,0 +1,6 @@
+docker service create --name hello --network networkname --replicas 2 -p 80:80 raghunathareddyp/docker:friendlyhello
+docker service ls
+docker service ps hello
+docker service inspect --pretty hello
+docker node ps self
+docker service scale hello=5

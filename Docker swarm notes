@@ -1,0 +1,8 @@
+Swarm means large or dense group of flying insects
+a cluster of docker engines is swarm
+Features of Docker Swarm : 
+    Declarative service model
+    Scaling - you can declare number of tasks you need
+    Desired state reconcilation
+    multihost networking
+    service discovery using embedded DNS and load balancing
